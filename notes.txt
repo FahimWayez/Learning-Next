@@ -20,3 +20,6 @@ Class 4
 # Tinta folder create korsi src/app er bhitore, performance, reliability, scale. Ar protita folder er bhitore ekta kore page.tsx file create koris.
 
 # Protita page.tsx er ekta export default react component thaka lagbe. Oita ja return korbe, amra oi route e giye oitai dekhte parbo
+
+Class 5
+# Ekhon onek page to banay felsi. Ebar oi page gular moddhe link kora lagbe amader. Etar jonno amra html er anchor tag use korsi aj porjonto...but ekhon theke next er ekta built in component use korbo jetar nam hoilo <Link>. Etar kaj e hoilo bibhinno routes er majhe navigate korano.
