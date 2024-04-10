@@ -1,15 +1,12 @@
 Class 1
-
 # React use kori jokhon amader highly interactive or dynamic kind application banano lage jemon facebook insta eshob.
 
 # But jinishta hoilo, emon onek website ase jegulate interaction eto lagena user er shathe...jemon wiki, ba kon landing page...egular kaj hoilo basically text image eshob diye just information show kora. Egulake static ba content driven sites bole. Next er one of the most primary goal is to expand the use of react, to help us make static sites.
 
 Class 2
-
 # Basically just ekta app banao, jetar kaj hoilo navigation bar e kisu link thakbe eketa page e jawar jonno, shob page e basic text thakbe basic image thakbe.
 
 Class 3
-
 # Amra je link ditesi, basically ekekta link ke press korle ekekta jaygay jabe etai chaitesi. To screen e eirokom different content show korar jonno amra nextjs er file based routing system use korbo. Eta kemne kaj kore? 
 
 # Amader src folder er bhitore je page.tsx file ta ase, oikhane ekta react component ase, oita must thakai lagbe...ekta export default function. 
