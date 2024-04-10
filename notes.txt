@@ -20,3 +20,9 @@ Class 4
 
 Class 5
 # Ekhon onek page to banay felsi. Ebar oi page gular moddhe link kora lagbe amader. Etar jonno amra html er anchor tag use korsi aj porjonto...but ekhon theke next er ekta built in component use korbo jetar nam hoilo <Link>. Etar kaj e hoilo bibhinno routes er majhe navigate korano.
+
+
+Class 6
+# src/app er bhitore je globals.css file, etar kaj globally kisu ui design set kora...jemon first e next er chehara kalo thake. Ekhon egula shob delete kore disi next purai changed.
+
+# layout.tsx file er kaj hoilo basically jodi amra emon kisu jinish chai jegula shobgula page ei dekha jabe...like navigation bar...tokhon amra ei layout.tsx e hat dite pari. Ei file eo ekta export default ase, jeta protita route er page.tsx file ke inherit kore. 
