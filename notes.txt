@@ -1,0 +1,6 @@
+Class 1
+
+# React use kori jokhon amader highly interactive or dynamic kind application banano lage jemon facebook insta eshob.
+
+# But jinishta hoilo, emon onek website ase jegulate interaction eto lagena user er shathe...jemon wiki, ba kon landing page...egular kaj hoilo basically text image eshob diye just information show kora. Egulake static ba content driven sites bole. Next er one of the most primary goal is to expand the use of react, to help us make static sites.
+
