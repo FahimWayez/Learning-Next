@@ -15,3 +15,8 @@ Class 3
 # Amader src folder er bhitore je page.tsx file ta ase, oikhane ekta react component ase, oita must thakai lagbe...ekta export default function. 
 
 # Ekhon kotha hoilo, amader prottekta page er jonnoi erokom ekta kore page.tsx file ready korte hobe jegular bhitore contents thakbe. Ar prottekta page egula amra access korte parbo oi page ta kon folder e ase oitar nam diye.
+
+Class 4
+# Tinta folder create korsi src/app er bhitore, performance, reliability, scale. Ar protita folder er bhitore ekta kore page.tsx file create koris.
+
+# Protita page.tsx er ekta export default react component thaka lagbe. Oita ja return korbe, amra oi route e giye oitai dekhte parbo
