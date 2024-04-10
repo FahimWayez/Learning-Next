@@ -26,3 +26,10 @@ Class 6
 # src/app er bhitore je globals.css file, etar kaj globally kisu ui design set kora...jemon first e next er chehara kalo thake. Ekhon egula shob delete kore disi next purai changed.
 
 # layout.tsx file er kaj hoilo basically jodi amra emon kisu jinish chai jegula shobgula page ei dekha jabe...like navigation bar...tokhon amra ei layout.tsx e hat dite pari. Ei file eo ekta export default ase, jeta protita route er page.tsx file ke inherit kore. 
+
+Class 7
+
+
+Class 8
+# amra jokhon konokisu import korbo, age diye ../ ../ egular bodole, @ use korle, easily import korte parbo. @ eta mean kore je src theke khuja shuru korbe. Etake absolute path bole
+
