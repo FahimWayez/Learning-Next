@@ -40,3 +40,13 @@ Class 10
 
 Class 11
 # Layout shifting is another reason that we use the image tag for. Layour shifting is basically, jodi karo khub slow internet thake, or ekta image suppose load hoite time lagtese...tokhon oi image er pasher kono text jodi thake taile shei text image er bodole theke jaite pare. Ar image load hoile layout ta change hoye image eshe gele eta disrupting. Eshober jonnoi amader image tag ta use korte pari. Etate image er ekta layout fix kore rakhe at least jate kore layout ta shift na hoy at least.
+
+
+Class 12
+# Reusable component hishebe amra hero ta ansi. Hero hoilo oi portion ta jeta te pisone image er upore boro kore lekha thake. Ei Hero ta resuable as in, ekhane scale reliablity ba home ba performance shob jaygay e eki template, just bhitorer properties different. Etar jonno interface use korsi.
+
+# Interface basically hoilo ami je function Hero er ekta property pass kortesi, oikhane ekeketa ekekta na likhe ekta interface banaisi, oi interface e diye disi ki ki data type er property ar koyta property ashbe ekhane. 
+
+Class 13
+#Kisu styling add korsi just navbar ansi ar han tan
+
