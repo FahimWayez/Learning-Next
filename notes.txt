@@ -50,3 +50,6 @@ Class 12
 Class 13
 #Kisu styling add korsi just navbar ansi ar han tan
 
+Class 14
+# Next js banaise vercel name er ekta company. Vercel hosting service o provide kore. Vercel diye ami amar banano project deploy korte chaile command prompt e just likhte hobe npx vercel.
+
