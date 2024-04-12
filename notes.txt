@@ -38,3 +38,5 @@ Class 10
 
 # Ei image tag the firstly jei kaj kore, suppose amar kase ekta chobi ase onek boro resolution er. But amar device onujayi oitake resize kora lagbe...next jeta kore, nije theke oitake resize kore ney kore cache te rekhe dey. 
 
+Class 11
+# Layout shifting is another reason that we use the image tag for. Layour shifting is basically, jodi karo khub slow internet thake, or ekta image suppose load hoite time lagtese...tokhon oi image er pasher kono text jodi thake taile shei text image er bodole theke jaite pare. Ar image load hoile layout ta change hoye image eshe gele eta disrupting. Eshober jonnoi amader image tag ta use korte pari. Etate image er ekta layout fix kore rakhe at least jate kore layout ta shift na hoy at least.
