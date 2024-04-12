@@ -33,3 +33,8 @@ Class 7
 Class 8
 # amra jokhon konokisu import korbo, age diye ../ ../ egular bodole, @ use korle, easily import korte parbo. @ eta mean kore je src theke khuja shuru korbe. Etake absolute path bole
 
+Class 10
+# kono static page er moddhe chobi dite chaile oi chobigula public namer folder tay rakha lagbe. Ar image dewar jonno html e jemon img tag ase, ekhane erokom image tag ase which is more better. 
+
+# Ei image tag the firstly jei kaj kore, suppose amar kase ekta chobi ase onek boro resolution er. But amar device onujayi oitake resize kora lagbe...next jeta kore, nije theke oitake resize kore ney kore cache te rekhe dey. 
+
