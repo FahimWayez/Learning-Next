@@ -53,3 +53,7 @@ Class 13
 Class 14
 # Next js banaise vercel name er ekta company. Vercel hosting service o provide kore. Vercel diye ami amar banano project deploy korte chaile command prompt e just likhte hobe npx vercel.
 
+Class 18
+# second project start. Eta basically ekta title dibo, code snippets likhbo, arek jaygay eta access pabo. Code snippet edit ba delete korte parbo. Tar jonno database lagbe. Ar ei database hishebe use kortesi sqlite. SQLite er jonno prisma lage, prisma install korsi, ar npx prisma init --datasource-provider sqlite diye database initialize korsi. Ekhon schema.prisma name ekta file create hoise. Ei file e shob data ja store korte chai egula define kore dite parbo.
+
+# schema.prisma er bhitore dhuakar pore ekta notun model banaisi, and then oi model ta je use korbo eta bole disi shundor kore.
