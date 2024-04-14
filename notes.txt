@@ -73,4 +73,7 @@ Class 20
 eta diye ekta snippet create korsi jetay data hishebe disi ekta object jetay ase ekta title ar ekta code.
 
 
+Class 21
+# Basically ekta form banaisi, basic html css diyei. Tag gula ektu different, shob na but koyekta arki. Ektu layout change korsi.
+
 
