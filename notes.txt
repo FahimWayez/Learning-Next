@@ -58,3 +58,19 @@ Class 18
 
 # schema.prisma er bhitore dhuakar pore ekta notun model banaisi, and then oi model ta je use korbo eta bole disi shundor kore.
 
+Class 20
+# Ekhon je database banaisi, eta access korte amader project e shurute ekbar e shudhu ekta prisma client banay nite hobe.
+
+# src folder e arekta folder banaisi db, oitar bhitore index.ts banailam. Ekhane export kortesi ekta object, db name er, eta amader database handle korar path. Eta use korei crud shob korbo.
+
+# jemon db.snippet.create({
+  data: {
+    title: "Title",
+    code: "const abc =  () => {}",
+  },
+});
+
+eta diye ekta snippet create korsi jetay data hishebe disi ekta object jetay ase ekta title ar ekta code.
+
+
+
