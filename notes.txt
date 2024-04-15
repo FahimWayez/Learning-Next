@@ -213,4 +213,6 @@ Claa 38
 
 # Option 2 amra jokhon tokhon use korte parbo. Mane jehetu kono form nai, so eta amra call korlei use kora jabe...like ekta key press korleo eta execute hoye jabe moton.
 
-# Option 1 er benefit hoilo amra eta diye form create korte parbo jei form gula kaj korbe, even jodi user er browser javascript run na kore. Option 2 er shubidha hoilo amader bind function niye kono kaj nai...option 1 e bind function er kaj ase. Ar option 2 classic react behavior er khub close jar mane, amra kono data modify korte parbo amader server ei even without a user submits a form. Next option 1 ke beshi favor kore. 
+# Option 1 er benefit hoilo amra eta diye form create korte parbo jei form gula kaj korbe, even jodi user er browser javascript run na kore. Option 2 er shubidha hoilo amader bind function niye kono kaj nai...option 1 e bind function er kaj ase. Ar option 2 classic react behavior er khub close jar mane, amra kono data modify korte parbo amader server ei even without a user submits a form. 
+
+# Next option 1 ke beshi favor kore. Kenona user er browser javascript allow na korleo jeno eta use kora jay.
