@@ -198,3 +198,11 @@ Class 33
 # First e basic add kore nisi data fetch korar jonno. Ekhon kaj jeta korbo edit korar jonno ekta code editor anbo application e. Etar jonno ekta third party package install kora lagbe...React Monaco Editor. Eta ekta react component...eta ekta fully featured code editor. Etar jonno amader requirement lage hooks, event handler eshob. Tar mane hoilo, ekhane amader client component lagbe. 
 
 # Workflow hobe erokom: Amra age server client hishebe fetch korbo data ta. Erpore etake ekta snippet property hishebe pathabo client component er kase. Ei client component ta erpore hook ar event handler ja ja lagbe ta use korbe to set up and work with this monaco editor. 
+
+Class 36
+
+# Amra client component er bhitore kono server component er kisu use korte parbona. Jemon use server string, ba async await function body te dewa etc. But there is two options, jate kore amra server actions nite parbo client component er bhitore.
+
+# Option 1 hoilo, amra ekta server action ke ekta server component er moddhe kore, etake ekta client component e props hishebe pass kore dite parbo. But etay ekta shomossha, usually server component client component er kase event handler pass kore dite parena. Eta ekta exception.
+
+# Option 2 hoilo, amra amader project e ekta seperate file banay, oitar bhitore ek ba eker beshi server action define kore dite pari. Oitake export kore simply kono client component e niye nite parbo. Etay shubidha hoite pare like protita server action er age amader use server likhte hobena...eker beshi server action niye kaj korle amra ekbarei shobar upore use server likhe dilei hobe. 
