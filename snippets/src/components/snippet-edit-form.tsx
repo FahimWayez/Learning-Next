@@ -1,10 +1,21 @@
 "use client";
 
 import type { Snippet } from "@prisma/client";
+import { Editor } from "@monaco-editor/react";
 
 interface SnippetEditFormPage {
   snippet: Snippet;
 }
 export default function SnippetEditForm({ snippet }: SnippetEditFormPage) {
-  return <div>Client component has snippet with title {snippet.title}</div>;
+  return (
+    <div>
+      <Editor
+        height="40vh"
+        theme="vs-dark"
+        language="javascript"
+        defaultValue={snippet.code}
+        //options={{ minimap: { enabled: false } }} //ekhane aro kisu chaile amra additional design feature dite pari. Eta minimap shorabe.
+      ></Editor>
+    </div>
+  );
 }
