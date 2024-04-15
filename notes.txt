@@ -142,3 +142,17 @@ Class 24
 # Suppose ekta request pathano hoise server ke. Server component ba client component gula rendered hoye shathe shathe ekta html file pathay dey userer browser ke. Ei html er bhitore ekta script tag thake, jetate lakha ase next server e nojor dite ar try koro kisu js download korte. Abar next server e jawar pore joto component ase shobgula bhalo kore check kore, ogular bhitore javascript khujar try kore jegulay event handler state ba erokom jekono kisui thake, egula shobgulake ekta js file e ney, erpore user er kase pathay dey browser e.
 
 # Ekhane ekta important jinish hoilo, jodio client component client side e execute hoy bolsi, but jokhon user first time server e request korbe client component gula ekbar server e rendered hobei.
+
+
+Class 26
+# Ekhon suppose ami kono specific id er snippet dekhte chaitesi. Tate link hobe erokom: localhost:3000/snippets/1. Mane 1 number id wala snippet er detail dekhte chai. Tate amar src/app er bhitore 1 nam diye ekta folder banay page.tsx banaite hobe. Erokom jodi 1000 ta thake amar 1000 ta folder banano lagbe. Jar jonno jeta kori amra, src/app er bhitore [id] nam diye ekta folder khuli...eta onekta ekta array of pages bola jay wild card er moto. localhost:3000/snippets/ er pore jai dekhbe 1 dekhuk 2 dekhuk o etar shathe match kore dekhbe age.
+
+export default function SnippetShowPage(props: any) {
+  console.log(props);
+  return <div>Show a snippet</div>;
+}
+
+eta disi ar browser e to thikthak dekhsi e, console eo ashche amar property ta. Amra id hishebe number dileo, next etake string hishebei ney shobshomoy. So jodi proyojon lage amader eta cast kore newa lagte pare. Ar eikhane params hishebe id ashche cause ami src/app folder e je array of pages banaisi, oita id nam diye banano.
+
+{ params: { id: '1' }, searchParams: {} }
+
