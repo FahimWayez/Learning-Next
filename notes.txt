@@ -123,3 +123,22 @@ Class 23
 # Next different. Next e joto code, tar kisu execute hoy browser e, baki kisu execute hoy next server e. Code exactly koi run hoitese eta bujha onek tough. Jemon amader "use server"; string te server ei thake, and eta server ei executed hoy. 
 
 # Jemon amra je createSnippet function banailam, amra form fill in kore submit button click korle ei information gula post request er maddhome next server e jay. Next data egula receive kore server action e pass kore dey. Ekta notun snippet create hoy ar user ke redirect kore dey. Erpore next ekta response back kore je homoe page show kore dite. 
+
+Class 24
+# Ekhon kaj hoilo data gula database theke fetch kore, display korano. Jokhon e amra kono data fetch korte ba display koraite chai, amader jeta proyojon sheta hoilo ekta server component. 
+
+# Amra already jani, kisu code next er execute hoy server e, kisu code execute hoy browser e. Next application gula dui dhoroner component niye built, server components, client components. 
+
+# Client component ekta react component er motoi jinish, ekta function, jeta jsx return kore, jeta html e rendered hobe ar screen e display kore dibe. Client component react component er shob classic feature gula use korte parbe...jemon hooks, event handler..etc. 
+
+# Server component ektu different...ektu rule break kore. Egulao function, erao jsx return kore but kisu additional limitations, additional capabilities ase eder. Generally next e server component use kore. Ete better performance ar better ux pawa jabe.
+
+# All component amra ja banai next js e, by default shob server components. Server component er ekta boro feature hoilo, era async/await syntax component er body tei directly use korte pare. Jate shubidha hoilo, data fetch korte amader useState or useEffect use kora lagena.
+
+# Limitations o ase onek. First limitation, server components kono hook use korte parbena. Jemon amra useState use korte parbona. Server components event handlers assign o korte parena. Jemon kono onClick event handler o use korte parbona.
+
+# Client component bananor jonno file er ekdom upore shudhu ekta string likhte hobe "use client";. Ekhon ei component gula shob usual rules follow korte parbe...hooks, eventhandlers etc. But limittion hoilo, ekta client component ekta server component ke directly show koraite parbena. Taile motmat kotha hoilo amra client component tokhoni use korbo jokhon amader hook ba event handlers use korte hobe.
+
+# Suppose ekta request pathano hoise server ke. Server component ba client component gula rendered hoye shathe shathe ekta html file pathay dey userer browser ke. Ei html er bhitore ekta script tag thake, jetate lakha ase next server e nojor dite ar try koro kisu js download korte. Abar next server e jawar pore joto component ase shobgula bhalo kore check kore, ogular bhitore javascript khujar try kore jegulay event handler state ba erokom jekono kisui thake, egula shobgulake ekta js file e ney, erpore user er kase pathay dey browser e.
+
+# Ekhane ekta important jinish hoilo, jodio client component client side e execute hoy bolsi, but jokhon user first time server e request korbe client component gula ekbar server e rendered hobei.
