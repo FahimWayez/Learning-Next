@@ -184,3 +184,10 @@ Class 28
 # src/app e amra page.tsx khulsi. Eta ekta special file name. O folder e dhuke page.tsx dekhle oikhane dhuke dhukar pore shundor kore khuje pay bhitore ja ase shob. Erokhom aro kisu special file name ase...not-found.tsx, loading.tsx, error.tsx, route.tsx (route.tsx er kaj api endpoints define kora)
 
 # not-found.tsx file ami banaisi src/app/[id] er bhitore. Eta jeta kore, age page.tsx khuje. page.tsx khuje na paile closet not-found.tsx khuje. Closes as in, ami src/app/[id] te na banay src/app e banaileo o khuje paito etake. 
+
+
+Class 29
+
+# src/app e arekta special file rakhte pari loading.tsx...ei file ta ekta component export korbe shudhumatro jokhon ekta server component is trying to fetch some data. Eta just user experience er jonno bhalo karon onekgula data database theke fetch korte jodi time lage tokhon user kisu ekta dekhar jonno pabe arki.
+
+# Loading.tsx banaisi, but etar bhitorer jinish ekhon dekha jabena mane ekhon kaj korbena karon amader database locally e ase. Jodi amra ekta timeout function diye dei je database theke data ashte kisu shomoy lagbe taile loading ta dekha jaite pare. Even baire theke data newar shomoy to kisu time lagbei tokhono to dekha jabei.
