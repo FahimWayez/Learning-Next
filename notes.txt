@@ -206,3 +206,11 @@ Class 36
 # Option 1 hoilo, amra ekta server action ke ekta server component er moddhe kore, etake ekta client component e props hishebe pass kore dite parbo. But etay ekta shomossha, usually server component client component er kase event handler pass kore dite parena. Eta ekta exception.
 
 # Option 2 hoilo, amra amader project e ekta seperate file banay, oitar bhitore ek ba eker beshi server action define kore dite pari. Oitake export kore simply kono client component e niye nite parbo. Etay shubidha hoite pare like protita server action er age amader use server likhte hobena...eker beshi server action niye kaj korle amra ekbarei shobar upore use server likhe dilei hobe. 
+
+Claa 38
+
+# Server action Client component e call korar 2 ta option ase. Option 1 e amra ekta form banay oi form e amader server action er function ta  pass kore dibo. But jinish hoilo, amara to kono form fill in kortesina...ei information kono form thekeo ashbena. Ei information ashbe ekta function theke. Mane ekta state theke. Ei jinish implement korte amra bind function use korbo. Eta jehetu form nitese...mane hoilo user jokhon kono kisu submit korbe, amra tokkhon e eta access korte parbo.
+
+# Option 2 amra jokhon tokhon use korte parbo. Mane jehetu kono form nai, so eta amra call korlei use kora jabe...like ekta key press korleo eta execute hoye jabe moton.
+
+# Option 1 er benefit hoilo amra eta diye form create korte parbo jei form gula kaj korbe, even jodi user er browser javascript run na kore. Option 2 er shubidha hoilo amader bind function niye kono kaj nai...option 1 e bind function er kaj ase. Ar option 2 classic react behavior er khub close jar mane, amra kono data modify korte parbo amader server ei even without a user submits a form. Next option 1 ke beshi favor kore. 
