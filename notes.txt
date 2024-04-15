@@ -156,3 +156,24 @@ eta disi ar browser e to thikthak dekhsi e, console eo ashche amar property ta. 
 
 { params: { id: '1' }, searchParams: {} }
 
+
+Class 27
+# function asyng banaisi.
+
+# ekhon database connection dite db import korlam. Ebar jeta chinta sheta hoilo amra amader props er type disi any. Eta best practice na. What should we do is ekta interface banano, jetay description thakbe amader props er structure jate typescript bujhe ki ki property amra expect kortesi. 
+
+interface SnippetShowPageProps {
+  params: {
+    id: string;
+  };
+}
+
+Tai amra erokom ekta interface banay nisi, jeta define kore dey amra expect kortesi ekta param ashbe property te jetate thakbe id, jar datatype string.
+
+# findFirst method diye amra database er kono particular record khuje ber kori.
+
+#  const snippet = await db.snippet.findFirst({
+    where: { id: parseInt(props.params.id) }, //parseInt ansi karon amader parameter e ashtese integer thik e, but amader param kintu id ke string hishebe dhore nitese.
+  });
+
+  Ekhane ekhon snippet er bhitore ja disi, eta return korbe either ekta object jetay thakbe id, title ar code, othoba oi specific id er shathe kono snippet nai hishab korle eta ekta null value return kore dibe. 
