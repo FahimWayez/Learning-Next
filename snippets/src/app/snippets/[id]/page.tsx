@@ -15,5 +15,6 @@ export default async function SnippetShowPage(props: SnippetShowPageProps) {
   if (!snippet) {
     return notFound();
   }
+
   return <div>{snippet.title}</div>;
 }

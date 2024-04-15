@@ -177,3 +177,10 @@ Tai amra erokom ekta interface banay nisi, jeta define kore dey amra expect kort
   });
 
   Ekhane ekhon snippet er bhitore ja disi, eta return korbe either ekta object jetay thakbe id, title ar code, othoba oi specific id er shathe kono snippet nai hishab korle eta ekta null value return kore dibe. 
+
+
+Class 28
+
+# src/app e amra page.tsx khulsi. Eta ekta special file name. O folder e dhuke page.tsx dekhle oikhane dhuke dhukar pore shundor kore khuje pay bhitore ja ase shob. Erokhom aro kisu special file name ase...not-found.tsx, loading.tsx, error.tsx, route.tsx (route.tsx er kaj api endpoints define kora)
+
+# not-found.tsx file ami banaisi src/app/[id] er bhitore. Eta jeta kore, age page.tsx khuje. page.tsx khuje na paile closet not-found.tsx khuje. Closes as in, ami src/app/[id] te na banay src/app e banaileo o khuje paito etake. 
