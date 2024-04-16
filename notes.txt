@@ -238,3 +238,10 @@ Class 44
 
 Class 45
 # npm run build dilam. Ete kore amader application e jotogula routes ase shobgula show kortese. Ebar npm run start dilam application ke production mode e chalu korlam. Kore ekta notun snippet create korlam. Kintu jhamela hoilo jeta sheta hoilo, ei notun snippet ar dekha jaitesena. Ba kono snippet delete korleo oita dekhaitese still.
+
+Class 46
+# Problem er karon caching. Next caching implement kore onekgula location e. Jetai ei dhoroner unexpected behavior er karon. Next e chaching implement er jonno ase data cache, router cache, request memorization, full route cache. Tar moddhe data, router, request memorization eshob caching system run hoy jokhon application develop kortesi...mane developing mode e ase. 
+
+# But jokhon amra amader application production er jonno build kori, tokhon full route caching system use hoy.
+
+# Amra first e korsilam npm run build, next application er shobgula route khuje nisilo tokhon. Tar moddhe ekta chilo home route (src/app/page.tsx). Ei file er kaj hoilo ei file ta rendered hoile eita database e jay shobgula snippets ney erpore taderke screen e dekhay dey simply. Erpore next route tar upore ektu analysis chalay, je ei page ta static naki dynamic. Home page ta jehetu static khuje paise, next ei route er upor onek aggressive caching apply korbe. Mane hoilo, static dekhle next ei home page ke build time ei render kore nise. Render kore database theke jinishpati ene ekta html banay next server e diye rakhse. To porerbar jokhon amader kono jinish add kortesi ba delete kortesi, thik e database e add ba delete hoitese, but cache thekei show kortese amader home page, updated page show korte partesena. Jeta first e render kora, oitai barbar shobaike dekhabe.
