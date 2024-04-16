@@ -234,3 +234,7 @@ Class 44
 # Ekhon amra basic form validation shesh korsi. But ekhon suppose, amader database connect hoite partesena...tokhon runtime error dibe amaderke. Ei error handle kore shundor ekta message dekhano uchit instead of showing that big runtime error type messag. Etar jonno o amra oi specal file name use korbo src/app er bhitore error.tsx nam er. 
 
 # src/app er bhitore special file error.tsx must be a client component. But etar ekta problem hoilo, hae thikase eta user ke thrown error dekhay dibe ekta friendly way te, but eta database connection na paile erpore abar form ta dekhay deyna user ke je abar resubmit korar try koro emne. Ekhon amader jeta kora lagbe, sheta hoilo, kono error throw kora jabena. Just ekta message return kore dite hobe.
+
+
+Class 45
+# npm run build dilam. Ete kore amader application e jotogula routes ase shobgula show kortese. Ebar npm run start dilam application ke production mode e chalu korlam. Kore ekta notun snippet create korlam. Kintu jhamela hoilo jeta sheta hoilo, ei notun snippet ar dekha jaitesena. Ba kono snippet delete korleo oita dekhaitese still.
