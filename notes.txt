@@ -216,3 +216,16 @@ Claa 38
 # Option 1 er benefit hoilo amra eta diye form create korte parbo jei form gula kaj korbe, even jodi user er browser javascript run na kore. Option 2 er shubidha hoilo amader bind function niye kono kaj nai...option 1 e bind function er kaj ase. Ar option 2 classic react behavior er khub close jar mane, amra kono data modify korte parbo amader server ei even without a user submits a form. 
 
 # Next option 1 ke beshi favor kore. Kenona user er browser javascript allow na korleo jeno eta use kora jay.
+
+
+Class 41
+
+# Ekhon porjonto edit delete create er kaj shesh. But shomossha jeta hoilo sheta hoilo amra jodi ekhon kono empty data diye empty code ba empty title diye ekta snippet create kori, tateo amader snippet database e save hoye jay. Ekhon amader eta fix kora lagbe. Mane amader validation add kora lagbe. Egula general error handling.
+
+# Jodi amra normal react component e use kortam taile eishob validation kora onek easy. Kintu amra server forms use kortesi, jetar shubidhai chilo je user er browser e jodi js na thake taholeo amra jeno kaj korte pari.
+
+# Ekhon ei form er kaj gula hoy jebhabe, form theke server action e information gula jay, but jodi kono problem thake sheta ar back pathanor way nai. So ekhon amader jeta lagbe sheta hoilo ekta way, jate somehow ekta server action theke page e communicate kora jayy. Etar jonno amra ekta hook use korbo, useFormState namer.
+
+# Ei error handling useFormState bade kaj kore jemne, suppose amader kisu page component ase jeta kisu html generate korbe user ke ekta form dekhabe. User tar form er data input diye save button click korle browser automatically shobgula info collect korbe form theke ar etake server action e pathay dibe ekta formData object hishebe. Ekhon jodi server action run howar pore realize kore ekhane kono issue ase, taile or kono way nai js chara abar etake rerender kore page component er kase ekta error message show korar. Ejonnoi amader useFormState use kora lagbe.
+
+# Ekhon useFormState kemne kaj kore. Amra same page component er shathe ekta formState pathabo, jate thakbe ekta jinish, ekt amessage string type er. Same bhabe page component html generate korbe browser e dekhabe, shathe oi formState tao pathay dibe. Ekhon user same bhabe form fill in kore save button click korbe, ar browser automatically shobgula infor collect kore form theke etake server action e pathay dibe ekta formData object hishbe, shathe oi empty string wala formState tao pathabe. Server action ebar jodi realize kore je ekhane kono issue ase, ebar o communicate korar jonno oi formState er message e je error message oita pass kore dibe, ar oita pore browser e user ke show korabe abar as usual way te.
