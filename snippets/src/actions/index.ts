@@ -56,7 +56,7 @@ export async function createSnippet(
       code: code,
     },
   });
-  console.log(snippet);
+
   //Redirect the user to the root. Amra jodi konodin forcibly navigate koraite chai jemon redirect koraite chai ekta user ke amader application er bhitore,  amader ekta function use korte hobe redirect name. Upore import korsi.
   redirect("/");
 }
