@@ -11,10 +11,12 @@ interface SnippetEditFormPage {
 }
 export default function SnippetEditForm({ snippet }: SnippetEditFormPage) {
   const [code, setCode] = useState(snippet.code);
+
   const handleEditorChange = (value: string = "") => {
     setCode(value);
   };
 
+  const editSnippetAction = actions.editSnippet.bind(null, snippet.id, code); // amra bind call kortesi editSnippetAction er ekta preloaded version bananor jonno.
   return (
     <div>
       <Editor
@@ -25,6 +27,11 @@ export default function SnippetEditForm({ snippet }: SnippetEditFormPage) {
         //options={{ minimap: { enabled: false } }} //ekhane aro kisu chaile amra additional design feature dite pari. Eta minimap shorabe.
         onChange={handleEditorChange}
       ></Editor>
+      <form action={editSnippetAction}>
+        <button className="p-2 border rounded" type="submit">
+          Save
+        </button>
+      </form>
     </div>
   );
 }
