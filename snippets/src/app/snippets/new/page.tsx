@@ -36,7 +36,11 @@ export default function SnippetCreatePage() {
           />
         </div>
 
-        <div>{formState.message}</div>
+        {formState.message ? ( //formState.message e ki ase age check kortesi. Jodi eta defined thake taile formstate.message e ja ase ta dekhaitese, ar jodi defined na thake taile mane jodi empty string hoy suppose, taile display korbe null.
+          <div className="my-2 p-2 bg-red-200 border rounded border-red-400 items-center justify-between text-center">
+            {formState.message}
+          </div>
+        ) : null}
 
         <button type="submit" className="rounded p-2 bg-blue-200">
           Create
