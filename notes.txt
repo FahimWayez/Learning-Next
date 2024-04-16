@@ -245,3 +245,31 @@ Class 46
 # But jokhon amra amader application production er jonno build kori, tokhon full route caching system use hoy.
 
 # Amra first e korsilam npm run build, next application er shobgula route khuje nisilo tokhon. Tar moddhe ekta chilo home route (src/app/page.tsx). Ei file er kaj hoilo ei file ta rendered hoile eita database e jay shobgula snippets ney erpore taderke screen e dekhay dey simply. Erpore next route tar upore ektu analysis chalay, je ei page ta static naki dynamic. Home page ta jehetu static khuje paise, next ei route er upor onek aggressive caching apply korbe. Mane hoilo, static dekhle next ei home page ke build time ei render kore nise. Render kore database theke jinishpati ene ekta html banay next server e diye rakhse. To porerbar jokhon amader kono jinish add kortesi ba delete kortesi, thik e database e add ba delete hoitese, but cache thekei show kortese amader home page, updated page show korte partesena. Jeta first e render kora, oitai barbar shobaike dekhabe.
+
+Class 47
+# Ekhon kotha hoilo amra kemne bujhbo amader application e konta static konta dynamic route? Amra abar dilam npm run build.
+
+  Route (app)                              Size     First Load JS
+  ┌ ○ /                                    175 B          93.8 kB
+  ├ ○ /_not-found                          875 B          87.8 kB
+  ├ ƒ /snippets/[id]                       176 B          93.8 kB
+  ├ ƒ /snippets/[id]/edit                  4.67 kB        91.6 kB
+  └ ○ /snippets/new                        791 B          87.7 kB
+  + First Load JS shared by all            86.9 kB
+    ├ chunks/23-0f744506974b7ec9.js        31.4 kB
+    ├ chunks/fd9d1056-be48aeae6e94b8d1.js  53.7 kB
+    └ other shared chunks (total)          1.88 kB
+
+
+  ○  (Static)   prerendered as static content
+  ƒ  (Dynamic)  server-rendered on demand
+
+  Eta ashche output.
+
+  Ekhane amader application er shobgula routes dekha jaitese. Dekhle dekha jay ekhane dui dhoroner bullet points ase, ekta gol, ekta f er moto. Gol jegula, ogular mane hoilo next mone kortese ei route gular bhitore shudhu static data ase. Next ei page gula ekhon render korbe, ekbar e korbe, and protibar ei rendered etai dekhabe. 
+
+  Ar f er moto oigula dynamic data ase hishebe dhore ney next. Oigula next barbar render korbe jokhoni keu oi page visit korbe.
+
+# Ekhon kotha hoilo, next ei dynamic ar static route kemne decide kortese je konta kon dhoroner route? Basically, shobgula page e default static. Ogula tokhoni dynamic route hoy, jokhon route rendering er shomoy next dekhe bhitore at least ekta dynamic function call kora ase ba ekta dynamic variable ke refer kora hoitese (jemon cookies.set(), cookies.delete(), useSearchParams(), etc...), kingba specific kono route segment config option assigned thakle, kingba fetch function call korle, ba onno kono dynamic route use korle.
+
+# export const dynamic = "force-dynamic"; eta use korle forcefully ei page ke dynamic bhabbe next.
