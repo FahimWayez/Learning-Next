@@ -305,3 +305,9 @@ Class 48
 
 Class 50
 # Ekhon bepar hoilo, amader static page gula caching kore automatic thikase. Dynamic gula default kintu caching korena...tate amader caching er shubidha miss jaitese. Class 46 er motoi, abar amra npm run build dilam, o shobgula route khuje anlo age. Dekhlo /snippets/[id] eta kon dhoroner page static na dynamic. Dekhlo dynamic. Taile caching korbena. But amra still chaile caching implement korte pari ei page er jonno. Ekta function ase "generateStaticParams". Eta jemen kaj kore, eta build time e jabe database e. Giye jotogula existing snippet ase shob nibe, ar protitar jonno ekta kore id rakhbe. id nam karon amader route er nam ei [id] ase. Ar jehetu build time e, so ei function er through te oi oi id er snippet gula age theke pre render hoye thakbe first e.
+
+
+
+Third project
+Class 52
+# Prisma abar use korbo. Jar maddhome easily database access korte parbo amra. Arekta library use korbo nextui namer, eta ekta component library, eta nicely tailwind er shathe kaj kore. Onekgula component directly use korte parbo ekhane. Finally, authentication er jonno next-auth/authjs namer ekta library use korbo. Signup signin er jonno github oauth use korbo. 
