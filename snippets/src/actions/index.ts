@@ -9,6 +9,7 @@ export async function editSnippet(id: number, code: string) {
     data: { code },
   });
 
+  revalidatePath(`/snippets/${id}`); //jokhon edit korbo edit korar pore rerender kore dekhabe
   redirect(`/snippets/${id}`);
 }
 
