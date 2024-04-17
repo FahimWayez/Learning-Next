@@ -273,3 +273,31 @@ Class 47
 # Ekhon kotha hoilo, next ei dynamic ar static route kemne decide kortese je konta kon dhoroner route? Basically, shobgula page e default static. Ogula tokhoni dynamic route hoy, jokhon route rendering er shomoy next dekhe bhitore at least ekta dynamic function call kora ase ba ekta dynamic variable ke refer kora hoitese (jemon cookies.set(), cookies.delete(), useSearchParams(), etc...), kingba specific kono route segment config option assigned thakle, kingba fetch function call korle, ba onno kono dynamic route use korle.
 
 # export const dynamic = "force-dynamic"; eta use korle forcefully ei page ke dynamic bhabbe next.
+
+
+Class 48
+# Next amader homepage ke static hishebe dhore ney mane eta build time ei build hobe ar same html file reuse kore. Ebar amader target hoilo, ei page ke static e rakha,karon caching bhalo, caching e khub fast kaj kore, but current eirokom implementation ta change kora lagbe. Etar jonno amader caching control kora lagbe.
+
+# Caching contol korte, amra time based caching rules implement korte pari, mane ekta specific time pore pore caching drop korbe drop kore notun bhabe render korbe. Kingba amra on-demand caching control setup korte parbo, mane amra jokhon chabo forcibly caching drop kore rerender korte parbo. Othoba amra simply caching disable e kore dite pari.
+
+# Time based caching er khetre, amader special ekta variable nam ase "revalidate" namer. Amra eta use korte pari, etar moddhe joto value dibo toto second kporpor eta nije nije rerender hobe.
+
+  export const revalidate = 3; 
+  export default async function page(){
+    const snippets = await db.snippets.findMany();
+
+    return <div>{snippets.map(..)}</div>
+  }
+
+  Ekhane revalidate er value 3 disi mane hoilo 3 second porpor eta nije nije rerender hobe.
+
+  But eta amra use korbo kokhon? Suppose kono newsfeed ba website er front page...ekhane regular data shobshomoy refresh marle change hoyna...karon 1-2 mnt er old data dekhanote khoti nai kono.
+
+# On-demand  er khetre amader jokhon mone hobe je ekhon rerender kora uchit tokhon amra cache dump kore dibo. Etar jonno ekta library import kora lage.
+
+  import {revalidate} from "next/cache"
+  revalidatePath("/snippets");
+
+  Eta kokhon use korbo? Jemon amader ei application eta. Amra jokhon kisu change korbo amra janbo je data change hoitese. So jokhon chabo je user up to date data dekhbe, tokhon tokhon amra rerender korabo. Ar oita tokhoni jokhon amader ekhane create delete ba edit function gula use hobe.
+
+# Othoba amra chaile caching disable e kore rakhte pari. Amra chaile revlidate variable er value 0 kore rakhte parbo, or dynamic variable er value "force-dynamic" kore dite pari. Eta kokohon use korbo? Jokhon amder next server kono bairer api theke data use korbe, jekhane amra janina kokhon data change hobe othoba amra jodi emon expect kori je proti request er shathe data change hobe othoba jokhon user shobshomoy chay up to date data dekhte, tokhon.
