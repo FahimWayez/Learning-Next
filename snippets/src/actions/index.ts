@@ -1,6 +1,7 @@
 "use server";
 import { db } from "@/db";
 import { redirect } from "next/navigation";
+import { revalidatePath } from "next/cache";
 
 export async function editSnippet(id: number, code: string) {
   await db.snippet.update({
@@ -16,7 +17,8 @@ export async function deleteSnippet(id: number) {
     where: { id },
   });
 
-  redirect(`/`);
+  revalidatePath("/"); //rerender korte jokhon notun snippet delete korbe home page ke rerender korbe.
+  redirect("/");
 }
 
 export async function createSnippet(
@@ -70,6 +72,7 @@ export async function createSnippet(
     }
   }
 
+  revalidatePath("/"); //rerender korte jokhon notun snippet create korbe home page ke rerender korbe.
   //Redirect the user to the root. Amra jodi konodin forcibly navigate koraite chai jemon redirect koraite chai ekta user ke amader application er bhitore,  amader ekta function use korte hobe redirect name. Upore import korsi.
   redirect("/");
 }
