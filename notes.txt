@@ -301,3 +301,7 @@ Class 48
   Eta kokhon use korbo? Jemon amader ei application eta. Amra jokhon kisu change korbo amra janbo je data change hoitese. So jokhon chabo je user up to date data dekhbe, tokhon tokhon amra rerender korabo. Ar oita tokhoni jokhon amader ekhane create delete ba edit function gula use hobe.
 
 # Othoba amra chaile caching disable e kore rakhte pari. Amra chaile revlidate variable er value 0 kore rakhte parbo, or dynamic variable er value "force-dynamic" kore dite pari. Eta kokohon use korbo? Jokhon amder next server kono bairer api theke data use korbe, jekhane amra janina kokhon data change hobe othoba amra jodi emon expect kori je proti request er shathe data change hobe othoba jokhon user shobshomoy chay up to date data dekhte, tokhon.
+
+
+Class 50
+# Ekhon bepar hoilo, amader static page gula caching kore automatic thikase. Dynamic gula default kintu caching korena...tate amader caching er shubidha miss jaitese. Class 46 er motoi, abar amra npm run build dilam, o shobgula route khuje anlo age. Dekhlo /snippets/[id] eta kon dhoroner page static na dynamic. Dekhlo dynamic. Taile caching korbena. But amra still chaile caching implement korte pari ei page er jonno. Ekta function ase "generateStaticParams". Eta jemen kaj kore, eta build time e jabe database e. Giye jotogula existing snippet ase shob nibe, ar protitar jonno ekta kore id rakhbe. id nam karon amader route er nam ei [id] ase. Ar jehetu build time e, so ei function er through te oi oi id er snippet gula age theke pre render hoye thakbe first e.
