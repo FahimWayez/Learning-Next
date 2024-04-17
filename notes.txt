@@ -311,3 +311,7 @@ Class 50
 Third project
 Class 52
 # Prisma abar use korbo. Jar maddhome easily database access korte parbo amra. Arekta library use korbo nextui namer, eta ekta component library, eta nicely tailwind er shathe kaj kore. Onekgula component directly use korte parbo ekhane. Finally, authentication er jonno next-auth/authjs namer ekta library use korbo. Signup signin er jonno github oauth use korbo. 
+
+
+Class 54
+# Error: It's currently unsupported to use "export *" in a client boundary. Please use named exports instead. Ei error dicchilo, node_modules/@nextui-org/system/dis/index.mjs theke // export { Provider } from "@nextui-org/system-rsc"; ei line comment kore disi
