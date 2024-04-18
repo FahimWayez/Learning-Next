@@ -325,3 +325,6 @@ Class 59
 
 Class 63
 # Jodi amader project banano sheshe amader emon iccha hoy ba proyojon hoy je shobgulake ekta folder e dhukabo, taile shobjaygay jekhane jekhane ei link ba url use korsi shob jaygay giye giye change korte hobe. Jar jonno amra path helpers use korte pari, path helpers ekta file, jekhane shobgula path er url ekbar kore function er moto banay rakhbo, ar pura project e jekhane jekhane dorkar amra oi file ke call kore url manage kore nite parbo.
+
+# Class 64
+# Path helper banailam. Ekhane slug use korsi. Slug webtech er bhashay bola jay ekta descriptive text, jeta kono route er path ke bujhay. Ekhane slug use korsi shob wildcard file gular jonno.
