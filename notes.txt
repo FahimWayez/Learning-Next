@@ -351,3 +351,6 @@ Class 72
 
 Class 76
 # Create topic form banano shesh. Data receive o korte pari. Ekhon amra  ei form er upore validation chalabo.Validation korar jonno ekta library use korbo zod namer. Zod use korte amader ekta schema object banano lagbe. Ei schema object e kisu validation rules ase jegula kisur datar upor apply kora jay.
+
+Clas 77 
+# Ekhon amra form validation kore error gula dekhte paitesi. Ei error gula ekhon amar form er moddhe dekhano lagbe userke. Tar jonno amra abar useFormState use korbo. Component theke browser e ekta empty string er moto jave, oikhan theke formData er shathe server action e jabe, erpore server jodi mone kore ekhane kono problem ase taile problem ta oi useFormState er message e likhbe ar oita pore abar component er kase pathabe.
