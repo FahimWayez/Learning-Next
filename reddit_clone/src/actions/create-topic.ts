@@ -2,6 +2,11 @@
 
 import z from "zod";
 import { auth } from "@/auth";
+import type { Topic } from "@prisma/client"; //eta describe kore amader application e ekta topic exactly ki
+import { redirect } from "next/navigation";
+import { db } from "@/db";
+import paths from "@/paths";
+import { revalidatePath } from "next/cache";
 
 const createTopicSchema = z.object({
   name: z
@@ -48,8 +53,31 @@ export async function createTopic(
     };
   }
 
-  return {
-    errors: {},
-  };
-  //TODO: revalidating the homepage after creating a topic
+  let topic: Topic;
+  try {
+    topic = await db.topic.create({
+      data: {
+        slug: result.data.name, //eta ashtese zod diye data validate korar pore amra result e shob rakhsilam. Oikhan theke
+        description: result.data.description,
+      },
+    });
+  } catch (err: unknown) {
+    if (err instanceof Error) {
+      return {
+        errors: {
+          _form: [err.message],
+        },
+      };
+    } else {
+      return {
+        errors: {
+          _form: ["Something went wrong"],
+        },
+      };
+    }
+  }
+
+  revalidatePath("/");
+
+  redirect(paths.topicShow(topic.slug)); //etake try block e rakhtesina karon redirect ekta error throw korei kaj kore. Jodi try block e diye dei taile o barbar error e dekhay dibe, konodin e ar redirected hobena
 }
