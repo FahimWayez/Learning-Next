@@ -328,3 +328,15 @@ Class 63
 
 # Class 64
 # Path helper banailam. Ekhane slug use korsi. Slug webtech er bhashay bola jay ekta descriptive text, jeta kono route er path ke bujhay. Ekhane slug use korsi shob wildcard file gular jonno.
+
+
+Class 71
+
+# Ekhon amader header add kora shesh. Sign up Sign in Sign out button er kaj shesh. So home page e ami shob kete shudhu eddur rakhlem 
+  export default function Home() {
+    return <div>Home page</div>;
+  }
+
+  Ekhon kahini hoilo, ami npm run build dile, etake dynamic dekhay. Dynamic er joto shorto chilo, je hoy path e kono jodi wildcard thake tokhon hobe dynamic, ba kono jodi fetch function use kori tokhon, kingba jodi forcefully dynamic kori, ba ekta dynamic function call korle ba dynamic variable er reference anle. Ekhane to ektao hoitese na taile? 
+
+  Beparta hoilo amra to header call kortesi ekdom shob jaygatei. Oi Header file er bhitore amra auth function call korsi, jeta dynamic. Jar karone ekhon amar application er shob page kei she bhabtese as dynamic page. To eta to uchit na shudhu auth er jonno amra home page keo dynamic rakhi...caching er shubidha haray feli. To ekhon eta fix korte hobe.
