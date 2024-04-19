@@ -340,3 +340,11 @@ Class 71
   Ekhon kahini hoilo, ami npm run build dile, etake dynamic dekhay. Dynamic er joto shorto chilo, je hoy path e kono jodi wildcard thake tokhon hobe dynamic, ba kono jodi fetch function use kori tokhon, kingba jodi forcefully dynamic kori, ba ekta dynamic function call korle ba dynamic variable er reference anle. Ekhane to ektao hoitese na taile? 
 
   Beparta hoilo amra to header call kortesi ekdom shob jaygatei. Oi Header file er bhitore amra auth function call korsi, jeta dynamic. Jar karone ekhon amar application er shob page kei she bhabtese as dynamic page. To eta to uchit na shudhu auth er jonno amra home page keo dynamic rakhi...caching er shubidha haray feli. To ekhon eta fix korte hobe.
+
+
+Class 72
+# Header er bhitore je auth function call korsi, oita somehow cookies niye kaj kore. In general jokhoni cookies touch kora hoy etake next ekta dynamic route hishebe dhore ney. But amra ei home page ta ke static hishebe e beshi prefer kori. So plan hoilo amra ei authentication er jinish gula header theke ber kore ekta client component e diye dibo. Mane header nije kono authentication er access pabena. Tai amra ekta HeaderAuth namer component banabo, jeta ekta client component. Maneei headerAuth component tai decide korbe signin sigup button dekhabe naki profile er chobita dekhabe. 
+
+# Ei headerAuth useSession namer hook use kore authentication figure out korte. Ei useSession directly cookies access korena, eta backend e ekta request kore auth status janar jonno. So, cookies access na hoile static thakbe amader jegula static thaka uchit oi page gula.
+
+# Eta suppose fix korlam. Fine. Ekhon ekta problem hoilo, amra useSession use kortesi, eta browser e authenticate kore, and backend er theke data request kore ane. So even ami jodi ekhon logged in thaki, eta kisu slight time er jonno janena je user authenticated kina. So olpo time eta signin signup button dekhabe ekhono. Eta ekta problem.
