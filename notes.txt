@@ -357,7 +357,7 @@ Clas 77
 
 
 Class 78
-# client component banaisi topic-create-form.tsx ta ke. Ar create-topic.ts eta server component. Ekhon client er bhitore jokhon useFormState use korsi, ekta error ditesilo. Amra jani useFormState er first parameter serverAction, ar second parameter jetai dewa hok,  oitai server component e serverAction function er first parameter hoy. Ekhon etai jhamela, je ei duijaygar type eki hoite hobe, shathe serverAction function er return type o same howa lagbe.
+# client component banaisi topic-create-form.tsx ta ke. Ar create-topic.ts eta server component. Ekhon client er  bhitore jokhon useFormState use korsi, ekta error ditesilo. Amra jani useFormState er first parameter serverAction, ar second parameter jetai dewa hok,  oitai server component e serverAction function er first parameter hoy. Ekhon etai jhamela, je ei duijaygar type eki hoite hobe, shathe serverAction function er return type o same howa lagbe.
 
 Class 79
 # Jemon ei program e, client component e useFormState er second parameter e pass korsi ekta empty errors object. Same server component e serverAction er bhitore first parameter disi ekta interface, jei interface er bhitore ekta errors object ase. Same serverAction er ekta return type promise korsi, oi same interface tai.
