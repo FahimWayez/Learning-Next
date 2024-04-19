@@ -348,3 +348,6 @@ Class 72
 # Ei headerAuth useSession namer hook use kore authentication figure out korte. Ei useSession directly cookies access korena, eta backend e ekta request kore auth status janar jonno. So, cookies access na hoile static thakbe amader jegula static thaka uchit oi page gula.
 
 # Eta suppose fix korlam. Fine. Ekhon ekta problem hoilo, amra useSession use kortesi, eta browser e authenticate kore, and backend er theke data request kore ane. So even ami jodi ekhon logged in thaki, eta kisu slight time er jonno janena je user authenticated kina. So olpo time eta signin signup button dekhabe ekhono. Eta ekta problem.
+
+Class 76
+# Create topic form banano shesh. Data receive o korte pari. Ekhon amra  ei form er upore validation chalabo.Validation korar jonno ekta library use korbo zod namer. Zod use korte amader ekta schema object banano lagbe. Ei schema object e kisu validation rules ase jegula kisur datar upor apply kora jay.
