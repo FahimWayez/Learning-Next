@@ -7,6 +7,7 @@ import { z } from "zod";
 import { auth } from "@/auth";
 import { db } from "@/db";
 import paths from "@/paths";
+import { error } from "console";
 
 const createPostSchema = z.object({
   title: z.string().min(3),
@@ -22,6 +23,7 @@ interface CreatePostFormState {
 }
 
 export async function createPost(
+  slug: string,
   formState: CreatePostFormState,
   formData: FormData
 ): Promise<CreatePostFormState> {
@@ -42,6 +44,15 @@ export async function createPost(
       errors: { _form: ["Please sign in to create a post."] },
     };
   }
+
+  const topic = await db.topic.findFirst({
+    where: { slug },
+  });
+
+  if (!topic) {
+    return { errors: { _form: ["Cannot find any topic with that slug"] } };
+  }
+
   return {
     errors: {},
   };
