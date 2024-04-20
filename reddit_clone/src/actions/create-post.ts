@@ -7,7 +7,6 @@ import { z } from "zod";
 import { auth } from "@/auth";
 import { db } from "@/db";
 import paths from "@/paths";
-import { error } from "console";
 
 const createPostSchema = z.object({
   title: z.string().min(3),
@@ -53,8 +52,29 @@ export async function createPost(
     return { errors: { _form: ["Cannot find any topic with that slug"] } };
   }
 
-  return {
-    errors: {},
-  };
-  //TODO: Revalidate the topic show page
+  let post: Post;
+  try {
+    post = await db.post.create({
+      data: {
+        title: result.data.title,
+        content: result.data.content,
+        userId: session.user.id,
+        topicId: topic.id,
+      },
+    });
+  } catch (err: unknown) {
+    if (err instanceof Error) {
+      return {
+        errors: { _form: [err.message] },
+      };
+    } else {
+      return {
+        errors: { _form: ["Something went wrong, failed to create post."] },
+      };
+    }
+  }
+
+  revalidatePath(paths.topicShow(slug));
+  // redirect(paths.postShow(slug, post.id));
+  redirect("/");
 }
