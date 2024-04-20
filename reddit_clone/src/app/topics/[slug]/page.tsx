@@ -13,9 +13,7 @@ export default function TopicShowPage({ params }: TopicShowPageProps) {
         <h1 className="text-2xl font-bold mb-2">{slug}</h1>
       </div>
 
-      <div>
-        <Buttn></Buttn>
-      </div>
+      <div></div>
     </div>
   );
 }
