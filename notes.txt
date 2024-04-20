@@ -367,3 +367,6 @@ Class 100
 
 Class 107 
 # Content stream korar time e jodi amader kisukkhon kharap net ba jar jonnoi hok time lage, taile ki hobe? Oijonno amr chaile loading.tsx banay rakhte pari. But oitate problem hoilo age pura page loading.tsx dekhabe pore diye eta dekhabe. Ekhon amra eta bchanor jonno exact kono ekta component ke pre render koray rakhte suspense use korte pari. Suspense use korle tokhon exact ekta kisu load newaite parbo.
+
+Class 111
+# Ebar search er pala. Jodi kono search query ami amar server component e dekhte chai, taile page component e age eta amader paite hobe. 
