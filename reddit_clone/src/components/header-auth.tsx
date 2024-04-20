@@ -11,6 +11,7 @@ import {
   Popover,
   PopoverTrigger,
   PopoverContent,
+  Image,
 } from "@nextui-org/react";
 import { useSession } from "next-auth/react";
 import * as actions from "@/actions";
@@ -45,15 +46,14 @@ export default function HeaderAuth() {
       <>
         <NavbarItem>
           <form action={actions.signIn}>
-            <Button type="submit" color="success" variant="flat">
-              Sign In
-            </Button>
-          </form>
-        </NavbarItem>
-        <NavbarItem>
-          <form action={actions.signIn}>
             <Button type="submit" color="primary" variant="flat">
-              Sign Up
+              <Image
+                src="/github.png"
+                alt="GitHub Logo"
+                width={24}
+                height={24}
+              />
+              Sign In/Sign Up with Github
             </Button>
           </form>
         </NavbarItem>
