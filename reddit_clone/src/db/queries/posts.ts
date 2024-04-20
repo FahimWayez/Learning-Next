@@ -18,3 +18,21 @@ export function fetchPostByTopicSlug(slug: string): Promise<PostWithData[]> {
     },
   });
 }
+
+export function fetchTopPosts(): Promise<PostWithData[]> {
+  return db.post.findMany({
+    orderBy: [
+      {
+        comments: {
+          _count: "desc",
+        },
+      },
+    ],
+    include: {
+      topic: { select: { slug: true } },
+      user: { select: { name: true, image: true } },
+      _count: { select: { comments: true } },
+    },
+    take: 5,
+  });
+}
