@@ -364,3 +364,6 @@ Class 79
 
 Class 100
 # Onek kaj hoye gese. Ekhon amra post er niche comment je korbo, oi comment er ekta recusrsive ba nested comment er moto kore dekhaite hobe. Suppose ekta post er niche ekjon comment korlo, oi comment er reply e arekjon comment korlo. Eibhabe nested comment gula anar jonno protita comment er id thakbe, ar protita comment er oikhane dekha jabe je or parentId ba parent comment er id koto. 
+
+Class 107 
+# Content stream korar time e jodi amader kisukkhon kharap net ba jar jonnoi hok time lage, taile ki hobe? Oijonno amr chaile loading.tsx banay rakhte pari. But oitate problem hoilo age pura page loading.tsx dekhabe pore diye eta dekhabe. Ekhon amra eta bchanor jonno exact kono ekta component ke pre render koray rakhte suspense use korte pari. Suspense use korle tokhon exact ekta kisu load newaite parbo.

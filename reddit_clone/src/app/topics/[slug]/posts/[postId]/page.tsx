@@ -4,6 +4,7 @@ import paths from "@/paths";
 import CommentCreateForm from "@/components/comments/comment-create-form";
 import CommentList from "@/components/comments/comment-list";
 import { fetchCommentsByPostId } from "@/db/queries/comments";
+import { Suspense } from "react";
 
 interface PostShowPageProps {
   params: {
@@ -20,7 +21,11 @@ export default async function PostShowPage({ params }: PostShowPageProps) {
       <Link className="underline decoration-solid" href={paths.topicShow(slug)}>
         {"< "}Back to {slug}
       </Link>
-      <PostShow postId={postId} />
+      <Suspense fallback={<div>Loading..</div>}>
+        //basically ekhane first ei loading... eta rendered hoye ase. Pore
+        jotokkhon time lagbe lagay bakishob ashol component add korbe
+        <PostShow postId={postId} />
+      </Suspense>
       <CommentCreateForm postId={postId} startOpen />
       <CommentList postId={postId} />
     </div>
