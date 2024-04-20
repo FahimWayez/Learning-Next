@@ -1,6 +1,7 @@
 import Link from "next/link";
 import PostShow from "@/components/posts/post-show";
 import paths from "@/paths";
+import CommentCreateForm from "@/components/comments/comment-create-form";
 
 interface PostShowPageProps {
   params: {
@@ -18,7 +19,7 @@ export default async function PostShowPage({ params }: PostShowPageProps) {
         {"< "}Back to {slug}
       </Link>
       <PostShow postId={postId} />
-      {/* <CommentCreateForm postId={postId} startOpen /> */}
+      <CommentCreateForm postId={postId} startOpen />
       {/* <CommentList comments={comments} /> */}
     </div>
   );
