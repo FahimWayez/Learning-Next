@@ -2,7 +2,6 @@ import NextAuth from "next-auth";
 import github from "next-auth/providers/github";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import { db } from "./db";
-import async from "../../snippets/src/app/snippets/[id]/edit/page";
 
 const GITHUB_CLIENT_ID = process.env.GITHUB_CLIENT_ID;
 const GITHUB_CLIENT_SECRET = process.env.GITHUB_CLIENT_SECRET;
