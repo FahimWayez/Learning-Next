@@ -361,3 +361,6 @@ Class 78
 
 Class 79
 # Jemon ei program e, client component e useFormState er second parameter e pass korsi ekta empty errors object. Same server component e serverAction er bhitore first parameter disi ekta interface, jei interface er bhitore ekta errors object ase. Same serverAction er ekta return type promise korsi, oi same interface tai.
+
+Class 100
+# Onek kaj hoye gese. Ekhon amra post er niche comment je korbo, oi comment er ekta recusrsive ba nested comment er moto kore dekhaite hobe. Suppose ekta post er niche ekjon comment korlo, oi comment er reply e arekjon comment korlo. Eibhabe nested comment gula anar jonno protita comment er id thakbe, ar protita comment er oikhane dekha jabe je or parentId ba parent comment er id koto. 
